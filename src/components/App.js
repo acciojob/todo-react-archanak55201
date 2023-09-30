@@ -3,7 +3,7 @@ import React , {useState} from "react";
 import './../styles/App.css';
 import Task from "./Task";
 import "./../App.css";
-import List from "./List";
+
 const App = () => {
   const [listTodo,setListTodo]=useState([]);
 
@@ -27,7 +27,18 @@ const App = () => {
         {
           listTodo && (
             listTodo.map((task,index)=>(
-                <List task={task} index={index} deleteTask={deleteTask}/>
+              <div style={{width:"20vw"}}>
+              <ul>
+                  <li><span>{task}</span>
+                      <button
+                          onClick={()=>(
+                              deleteTask(index)
+                          )}
+                      >Delete</button>
+                  </li>
+              </ul>
+
+      </div>
             ))
           )
         }
