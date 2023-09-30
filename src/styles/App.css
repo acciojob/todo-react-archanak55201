@@ -1,1 +1,8 @@
-
+.main{
+    display: flex;
+    justify-content: center;
+}
+.task-div{
+    border: 1px solid red;
+    padding: 1rem;
+}
