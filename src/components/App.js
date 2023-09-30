@@ -19,10 +19,11 @@ const App = () => {
   console.log(listTodo);
   return (
     <div className="main">
+      
+      <div>
       <div className="inp-div">
         <Task addTask={addTask}/>
       </div>
-      <div>
         <h1>TODO List</h1>
         {
           listTodo && (
