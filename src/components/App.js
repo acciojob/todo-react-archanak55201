@@ -21,7 +21,11 @@ const App = () => {
     <div className="main">
       
       <div>
+<<<<<<< HEAD
       <div className="inp-div">
+=======
+    <div className="inp-div">
+>>>>>>> 0c0700124739c99b852a9af25e98ae509e2926b8
         <Task addTask={addTask}/>
       </div>
         <h1>TODO List</h1>
