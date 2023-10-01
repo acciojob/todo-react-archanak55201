@@ -24,7 +24,7 @@ const App = () => {
       <div className="inp-div">
 
         <Task addTask={addTask}/>
-      </div>
+      
         <h1>TODO List</h1>
         {
           listTodo && (
